@@ -16,7 +16,7 @@ deepspeech --model gu_model/output_graph.pb --alphabet gu_model/alphabet.txt --l
 Using gui.py file, you can interact with Speech Recognizer GUI.
 Check your mic first and then Select speech model. 
 
-![alt text](assets/gui_screenshot.png | width=290) 
+<img src="https://raw.githubusercontent.com/sutariyaraj/gujarati_speech_recognition/master/assets/gui_screenshot.png" width="290"> 
 
 ## Acoustic Model
 Speech Database has been created from the multiple sources like: Audiobooks, YouTube Audios etc.
