@@ -1,13 +1,13 @@
 ## This is DeepSpeech speech recognition model for gujarati.
 Offline Speech Recognition Engine
 
-###Requirements
+### Requirements ###
 * To Use speech recognition engine using command line
 `pip install requirements.txt`
 
 * To use UI, additionally you need to do `pip install gui_requirements.txt`
 
-###Use
+### Use ###
 Using Command line inference is plain and simple.
 Note that here we are using sample demo.wav file as input.
 ```buildoutcfg  
