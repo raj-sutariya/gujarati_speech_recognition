@@ -2,8 +2,3 @@ requests
 speechrecognition
 pyaudio  
 # Prebuil binaries for windows for pyaudio https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio
-
-
-
-
-veda bhai is very good person
