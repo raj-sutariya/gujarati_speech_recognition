@@ -1,5 +1,6 @@
 ## This is DeepSpeech speech recognition model for gujarati.
-Offline Speech Recognition Engine
+Gujarati is native language to the Indian state of Gujarat sopken by around 60 million people. It's 6th most widely spoken language of India and 26th most widely spoken language in the world.
+This is the first speech recognition model for Gujarati Language. Model is trained in deepspeech mozilla framework.
 
 ### Requirements ###
 * To Use speech recognition engine using command line
@@ -28,4 +29,3 @@ Contact me if you want entire corpus.
 ## What's next
 * WER (Word error rate) Improvement
 * Language model enhancement.
-  
