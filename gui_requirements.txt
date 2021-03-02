@@ -1,4 +1,7 @@
 requests
 speechrecognition
 pyaudio  
-# Prebuil binaries for windows for pyaudio https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio
+# Following prebuilt library might work for you
+# pip install https://download.lfd.uci.edu/pythonlibs/w4tscw6k/PyAudio-0.2.11-cp37-cp37m-win_amd64.whl
+# if doesn't work, download other version from the following link
+# Prebuilt binaries for windows for pyaudio https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio
