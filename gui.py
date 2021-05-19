@@ -17,7 +17,7 @@ import _thread
 import speech_recognition as sr  # import Google ASR API - just for experiment
 
 LANGUAGE_CODE = "gu"
-REPLY_ME_BACK = False
+REPLY_ME_BACK = True
 TALK_BACK = False
 SHOW_OUTPUT_WITHOUT_LM_ALSO = False
 
@@ -32,7 +32,7 @@ if TALK_BACK:
 class App:
     def __init__(self, root):
         self.processing_flag = False
-        self.welcome = ttk.Label(root, text='Welcome! to Raj ASR Engine', font=("Constantia", 12), anchor=N,
+        self.welcome = ttk.Label(root, text='Welcome to Gujarati Chatbot!', font=("Constantia", 12), anchor=N,
                                  justify=CENTER,
                                  width=27)
         self.welcome.pack(pady=20)
