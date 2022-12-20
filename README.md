@@ -3,10 +3,9 @@ Gujarati is native language to the Indian state of Gujarat sopken by around 60 m
 This is the first speech recognition model for Gujarati Language. Model is trained using deepspeech mozilla framework and currenty achieves 8.7% WER (Word Error Rate).
 
 ### Requirements ###
-* To Use speech recognition engine using command line
+* To Use speech recognition engine you need to have python 3.7 or below installed on your system. 
 `pip install requirements.txt`
 
-* To use UI, additionally you need to do `pip install gui_requirements.txt`
 
 ### Use ###
 Using Command line inference is plain and simple.
@@ -27,5 +26,5 @@ lm.binary file is generate from web scrapping scrips of Gujarati wikipedia and g
 Contact me if you want entire corpus.
 
 ## What's next
-* WER (Word error rate) Improvement
+* WER Improvement
 * Language model enhancement.
