@@ -17,7 +17,7 @@ import _thread
 import speech_recognition as sr  # import Google ASR API - just for experiment
 
 LANGUAGE_CODE = "gu"
-REPLY_ME_BACK = True
+REPLY_ME_BACK = False
 TALK_BACK = False
 SHOW_OUTPUT_WITHOUT_LM_ALSO = False
 
@@ -116,7 +116,7 @@ class App:
         self.file_address = filedialog.askopenfilename(initialdir="/", title="Select file",
                                                        filetypes=(("Audio files", "*.wav;*.m4a;*.webm;*.mp3"),
                                                                   ("All files", "*.*")))
-        if self.file_address is not "":
+        if self.file_address != "":
             self.play_button.pack(pady=4)
             self.browse_button.config(text=self.file_address)
             self.send_button.pack(pady=4)
@@ -125,7 +125,7 @@ class App:
         if self.processing_flag is False:
             self.processing_flag = True
 
-            if self.model_folder is not "":
+            if self.model_folder != "":
                 if self.model_folder == 'google_api':
                     transcription = google_speech_api(self.file_address, lang_code=LANGUAGE_CODE)
                 else:
@@ -324,6 +324,7 @@ def deep_speech_engine(file_name, model_folder):
                 transcript = os.popen(command).read()[:-1] + "\n<<\n" + os.popen(command2).read()[:-1] + "\n" + 'new LM'
             else:
                 transcript = os.popen(command).read()[:-1]
+            print(command)
         except:
             transcript = "Speech Recognition Failed, Try Again"
     else:
@@ -344,7 +345,7 @@ def duckduckgo_api(input_text):
         json_response = response.json()
         a = json_response["Abstract"].split(".")
         try:
-            if a[0] is "":
+            if a[0] == "":
                 return json_response["RelatedTopics"][0]["Text"]
             else:
                 a[0] = a[0] + "."
